@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Shortcut Redirector",
+  "version": "1.0",
+  "description": "Redirect custom shortcuts to frequently visited websites.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Shortcut Redirector"
+  }
+}
