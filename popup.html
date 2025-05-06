@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Redirector</title>
+  <style>
+    body {
+      width: 350px; /* Increased width to accommodate longer mappings */
+      padding: 10px;
+    }
+    .mapping {
+      border: 1px solid #ccc;
+      padding: 8px;
+      margin-bottom: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .mapping-text {
+      flex-grow: 1;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+    .key {
+      font-weight: bold;
+    }
+    .value {
+      font-style: italic;
+    }
+    .removeButton {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    #addMapping {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>URL Redirector</h2>
+  <div id="addMapping">
+    <input type="text" id="patternInput" placeholder="c/">
+    <input type="text" id="destinationInput" placeholder="https://...">
+    <button id="addButton">Add Mapping</button>
+  </div>
+  <div id="mappingsContainer">
+    <h3>Current Mappings (Pattern -> Destination):</h3>
+    <ul id="mappingsList">
+      </ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

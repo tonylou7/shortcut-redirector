@@ -1,13 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Shortcut Redirector",
-  "version": "1.0",
-  "description": "Redirect custom shortcuts to frequently visited websites.",
-  "permissions": ["tabs"],
+  "name": "Custom URL Redirector",
+  "version": "1.1",
+  "description": "Redirect URLs based on user-defined mappings.",
+  "permissions": [
+    "webNavigation",
+    "storage"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Shortcut Redirector"
+    "default_popup": "popup.html"
   }
 }
